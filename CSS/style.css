@@ -1,1 +1,49 @@
-#page { background-image: url(../Media/backgroundImage.jpg); }
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
+
+body{
+  font-family: 'Cinzel Decorative', cursive;
+  background-image: url(../Media/backgroundImage.jpg);
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 400px;
+  position: relative;
+  top: 200px;
+}
+.music {
+  margin: auto;
+
+}
+h2 {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+
+
+#me {
+  margin: auto;
+
+  width: 60%;
+  text-align: center;
+}
+
+footer {
+  height: 200px;
+  position: relative;
+  top: 200px;
+}
+
+.musicDiv {
+  height: 250px;
+  width: 20%;
+  float: left;
+  margin: 0px 2.5%;
+  border: 0px solid black;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
