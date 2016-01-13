@@ -5,12 +5,12 @@ body{
   font-family: 'Cinzel Decorative', cursive;
   font-size: 16px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
 }
 .parallax {
 
-    border: 2px solid blue;
+
 
     margin: 0;
     padding: 0;
@@ -20,7 +20,8 @@ body{
     -webkit-perspective: 1px;
     perspective: 1px;
 
-
+    -webkit-perspective-origin-y:120%;
+    perspective-origin-y:120%;
 }
 
 
@@ -37,7 +38,7 @@ body{
 }
 .parallax__layer--base {
 
-  border: 2px solid black;
+
   -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
@@ -46,20 +47,21 @@ body{
 
 
   -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2);
-  border: 2px solid red;
+  transform: translateZ(-2px) scale(3);
+
 
 }
+
 .backgroundHolder {
   background-image: url(../Media/backgroundImage.jpg);
-  
-  border: 2px solid orange;
+
+
 
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: -300px;
+  bottom: -1200px;
   left: 0;
   right: 0;
 }
@@ -74,7 +76,7 @@ section.name {
 }
 section p {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 
@@ -194,15 +196,3 @@ nav ul ul ul {
 nav ul ul li {
   position: relative;
 }
-/*
-.footer {
-  height: 100px;
-  border: 2px solid green;
-  background-color: red;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 20;
-  right: 0;
-}
-*/
