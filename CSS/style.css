@@ -9,9 +9,6 @@ body{
 
 }
 .parallax {
-
-
-
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -123,11 +120,7 @@ section p {
   text-align: center;
 }
 
-footer {
-  height: 200px;
-  position: relative;
-  top: 200px;
-}
+
 
 .musicDiv {
   height: 250px;
@@ -140,6 +133,28 @@ footer {
   overflow: hidden;
   position: relative;
 }
+.projDiv {
+  height: 250px;
+  width: 20%;
+  float: left;
+  margin: 0px 2.4%;
+  border: 1px solid black;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background 2s ease-in-out;
+  -moz-transition: background 2s ease-in-out;
+  -o-transition: background 2s ease-in-out;
+  transition: background 2s ease-in-out;
+  background-size: 100%;
+}
+
+#pd1 {}
+#pd2 {}
+#pd3 {}
+#pd4 {}
+#pd5 {}
 
 nav {
   position:absolute;
