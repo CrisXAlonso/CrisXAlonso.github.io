@@ -8,6 +8,90 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="Scripts/imageCarousel.js"></script>
+    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var map = AmCharts.makeChart("mapdiv",{
+        type: "map",
+        theme: "dark",
+        projection: "mercator",
+        panEventsEnabled : true,
+        backgroundColor : "#535364",
+        backgroundAlpha : 1,
+        zoomControl: {
+        zoomControlEnabled : true
+      },
+      dataProvider : {
+        map : "worldHigh",
+        getAreasFromMap : true,
+        areas :
+        [
+	{
+		"id": "AT",
+		"showAsSelected": true
+	},
+	{
+		"id": "CH",
+		"showAsSelected": true
+	},
+	{
+		"id": "ES",
+		"showAsSelected": true
+	},
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GB",
+		"showAsSelected": true
+	},
+	{
+		"id": "IT",
+		"showAsSelected": true
+	},
+	{
+		"id": "PT",
+		"showAsSelected": true
+	},
+	{
+		"id": "VA",
+		"showAsSelected": true
+	},
+	{
+		"id": "MC",
+		"showAsSelected": true
+	},
+	{
+		"id": "MX",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "UY",
+		"showAsSelected": true
+	},
+	{
+		"id": "EG",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#CC6868",
+selectedColor : "#CC6868",
+outlineColor : "#666666",
+rollOverColor : "#D0FFB8",
+rollOverOutlineColor : "#000000"
+}
+});
+    </script>
 
 
   </head>
@@ -46,13 +130,12 @@
           <div id="pd4" class="projDiv"></div>
 
         </section>
-
+        <section class="spacer"><h1>My Interests</h1>
+        </section>
         <section class="music">
-          <h2><a href="#">My Music</a></h2>
+          <h2><a>Music Production</a></h2>
           <p>From a very young age, I began to develop a passion for electronic
-          music. The melding of technology and sound galvanized me into listening
-          to electronic groups of the French Electro <a href="#">(continue reading
-            ...)</a></p>
+          music. I enjoyed all aspects of it and have since dabbled in production.</p>
           <div class="musicDiv"><iframe  width="100%" height="100%" scrolling="no"
             frameborder="0"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240125585&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
@@ -62,43 +145,48 @@
 
         </section>
 
-        <section class="interests">
-          <h2><a href="#">More</a></h2>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+
+
+        <section class="interests" id="long">
+          <h2><a>Travel</a></h2>
+          <p>Countries I have visited at least once.</p>
+          <div id="mapdiv" style="width: 1000px; height: 450px;"></div>
 
         </section>
+
+        <section class="interests">
+          <h2><a>Sailing</a></h2>
+
+
+        </section>
+
+        <section class="interests">
+          <h2><a>Hiking and Backpacking</a></h2>
+
+
+
+        </section>
+
+
 
         <nav>
           <ul>
             <li>
-              <a title="aboutMe" href="#">About Me</a>
-            </li>
-            <li>
-              <a title="resume" href="resume.html">Resume</a>
-            </li>
-            <li>
-              <a title="blog">Blog</a>
+              <a title="home" href="index.html">Home</a>
 
-            </li>
-            <li>
-              <a title="Music" href="#">Music</a>
             </li>
             <li>
               <a title="projects">Projects</a>
               <ul>
                 <li>
+                  <a title="pump" href="#">Wind-Powered Pump</a>
+                </li>
+                <li>
                   <a title="quad" href="#">Quadcopter</a>
                 </li>
 
                 <li>
-                  <a title="pump" href="#">Wind-Powered Pump</a>
-                </li>
-
-                <li>
-                  <a title="modCell" href="#">Modular Cellphone</a>
+                  <a title="smp" href="#">Space Mission Planner</a>
                 </li>
 
                 <li>
@@ -109,7 +197,18 @@
             </li>
 
             <li>
-            <a title="Contact Me" href="">Contact Me</a>
+              <a title="resume" href="resume.html">Resume</a>
+            </li>
+
+            <li>
+              <a title="orgs" href="#">Organizations</a>
+            </li>
+            <li>
+              <a title="other" href="#">Other</a>
+            </li>
+
+            <li>
+            <a title="Contact Me" href="#">Contact Me</a>
             </li>
           </ul>
         </nav>
