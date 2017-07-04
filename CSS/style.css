@@ -50,31 +50,31 @@ body{
 }
 
 .backgroundHolder {
-  background-image: url(../Media/backgroundImage.jpg);
-
-
-
+  /*background-image: url(../Media/backgroundImage.jpg);
+*/
+background-image: url(https://images8.alphacoders.com/374/374852.jpg);
+background-size: cover;
   margin: 0;
   padding: 0;
   position: absolute;
   top: -300px;
-  bottom: -1200px;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
 
 section {
-  height: 400px;
+  height: 30%;
   position: relative;
-  top: 200px;
 }
 section.name {
   top: 100px;
 }
 section p {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  color: white;
 }
 section.interests{
   top: 200px;
@@ -83,12 +83,13 @@ section.interests{
 
 
 .pictureHolder {
-  background-image: url(../Media/myPic.jpeg);
+  background-image: url(../Media/myPic2.jpg);
   width: 250px;
   height: 250px;
   margin: auto;
   border: 3px solid black;
   border-radius: 200px;
+  background-size: 100%;
 }
 .music {
   margin: auto;
@@ -161,6 +162,22 @@ section p {
   transition: background 2s ease-in-out;
   background-size: 100%;
 }
+.projDiv2 {
+  height: 250px;
+  width: 80%;
+  float: left;
+  margin: 0px 2.4%;
+  border: 1px solid black;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background 2s ease-in-out;
+  -moz-transition: background 2s ease-in-out;
+  -o-transition: background 2s ease-in-out;
+  transition: background 2s ease-in-out;
+  background-size: 100%;
+}
 
 #pd1 {}
 #pd2 {}
@@ -168,67 +185,12 @@ section p {
 #pd4 {}
 #pd5 {}
 
-nav {
-  position:absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: rgba(120, 121, 127, 0.3);
-  padding: 0px 0px 0px 0px;
-}
-
 ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-nav ul li ul li a {
-  text-align: left;
-}
-
-nav ul li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 15px;
-  position: relative;
-  color: #000;
-  width: 100%;
-  text-align: center;
-}
-nav ul li a:visited {
-  text-decoration: none;
-  color: #000;
-}
-nav ul li:hover > ul {
-  display: block;
-}
-
-
-nav > ul > li {
-  float: left;
-  width: 29%;
-  padding: 0px 2%;
-}
-nav > ul > li > a {
-  font-weight: 700;
-}
-
-nav ul ul {
-  position: absolute;
-  top: 100%;
-  display: none;
-}
-
-nav ul ul ul {
-  top: 0px;
-  left: 100%;
-
-}
-
-nav ul ul li {
-  position: relative;
-}
 
 .type{
   position: relative;
@@ -267,3 +229,21 @@ nav ul ul li {
 #long{
   height: 600px;
 }
+nav ul {width: 100%;}
+nav ul li {width: 20%; text-align: center; color: white;}
+
+#navbar{background-color: black; border: 0px;}
+
+.backgroundHolder2 {
+background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18328_hires.jpg");
+background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -300px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.white{color: white; text-align: center;}
+.bottom-space{margin-bottom: 50px;}

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Cristian X. Alonso</title>
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="Scripts/imageCarousel.js"></script>
@@ -101,10 +102,9 @@ rollOverColor : "#D0FFB8",
 rollOverOutlineColor : "#000000"
 }
 });
-    </script>
+</script>
+</head>
 
-
-  </head>
 
   <body>
     <div class="parallax">
@@ -115,23 +115,37 @@ rollOverOutlineColor : "#000000"
 
         </div>
       <div class="parallax__layer parallax__layer--base">
+
+        <nav class="navbar navbar-default" id="navbar">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-center">
+                <li><a class="navbutton" href="index.html"><h4>HOME</h4></a></li>
+                <li><a class="navbutton" href="projects.html"><h4>PROJECTS</h4></a></li>
+                <li><a class="navbutton" href="interests.html"><h4>INTERESTS</h4></a></li>
+                <li><a class="navbutton" href="resume.html"><h4>RÉSUMÉ</h4></a></li>
+                <li><a class="navbutton" href="contact.html"><h4>CONTACT</h4></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <section class="name">
           <div id="me">
             <div class="pictureHolder">
 
             </div>
             <h1><a href="#">Cristian Alonso</a></h1>
-            <p>This website is currently under construction. Please check back
-            later for the fully made site. -Cristian</p>
+            <p>I am a senior at Cornell University pursuing my Bachelor of Science in Mechanical Engineering and a Master of Engineering in Aerospace Engineering. I have a strong interest in aerospace propulsion systems and have experience in the field. My time is also dedicated to the Cornell Hyperloop project team for which I am the mechanical team lead. I also enjoy personal projects involving design.</p>
           </div>
         </section>
-
+        <!--
         <section class="projects">
-          <h2><a href="#">Projects</a></h2>
-          <div id="pd1" class="projDiv"></div>
-          <div id="pd2" class="projDiv"></div>
-          <div id="pd3" class="projDiv"></div>
-          <div id="pd4" class="projDiv"></div>
+          <h1>Projects</h1>
+          <div id="pd1" class="projDiv2"></div>
+          <div id="pd2" class="projDiv2"></div>
+          <div id="pd3" class="projDiv2"></div>
+          <div id="pd4" class="projDiv2"></div>
 
         </section>
         <section class="spacer"><h1>My Interests</h1>
@@ -153,52 +167,24 @@ rollOverOutlineColor : "#000000"
 
         <section class="interests" id="long">
           <h2><a>Travel</a></h2>
-          <p>Countries I have visited at least once.</p>
+          <p>Countries I have visited at least once. The map is (unfortunately) looking a little scarce, but all in due time.</p>
           <div id="mapdiv" style="width: 1000px; height: 450px;"></div>
 
         </section>
 
         <section class="interests">
           <h2><a>Hiking and Backpacking</a></h2>
-
+          <div id="id1" class="projDiv"></div>
+          <div id="id2" class="projDiv"></div>
+          <div id="id3" class="projDiv"></div>
+          <div id="id4" class="projDiv"></div>
 
 
         </section>
+      -->
 
 
 
-        <nav>
-          <ul>
-            <li>
-              <a title="home" href="index.html">Home</a>
-
-            </li>
-            <li>
-              <a title="projects">Projects</a>
-              <ul>
-                <li>
-                  <a title="pump" href="#">Wind-Powered Pump</a>
-                </li>
-                <li>
-                  <a title="quad" href="#">Quadcopter</a>
-                </li>
-
-                <li>
-                  <a title="smp" href="#">Space Mission Planner</a>
-                </li>
-
-                <li>
-                    <a title="sumoBot" href="#">Sumo Bot</a>
-                </li>
-
-              </ul>
-            </li>
-
-            <li>
-              <a title="resume" href="resume.html">Résumé</a>
-            </li>
-          </ul>
-        </nav>
 
 
 
